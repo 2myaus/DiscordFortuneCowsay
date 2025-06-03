@@ -1,0 +1,8 @@
+.cache/
+.cache/*
+build/*
+build/
+compile_commands.json
+flake.lock
+DiscordFortuneCowsay
+*.discordtoken
