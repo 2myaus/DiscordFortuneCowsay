@@ -4,7 +4,7 @@
 
 // https://stackoverflow.com/a/478960
 std::string exec(std::string cmd) {
-  std::array<char, 128> buffer;
+  std::array<char, 512> buffer;
   std::string result;
   std::unique_ptr<FILE, void (*)(FILE *)> pipe(popen(cmd.c_str(), "r"),
                                                [](FILE *f) -> void {
